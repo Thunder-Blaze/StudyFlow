@@ -1,7 +1,7 @@
 import React from "react";
-import "./StudentPortal.css"; 
+import "./DashboardBanner.css"; 
 
-const StudentPortal = () => {
+const DashboardBanner = () => {
   return (
     
     <div className="container">
@@ -46,4 +46,4 @@ const StudentPortal = () => {
   );
 };
 
-export default StudentPortal;
+export default DashboardBanner;

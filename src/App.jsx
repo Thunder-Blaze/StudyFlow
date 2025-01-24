@@ -1,35 +1,18 @@
 import React from "react";
-import StudentPortal from "./components/StudentPortal";
-import CourseInstructors from "./components/CourseInstructors";
-// import { useState } from 'react'
-// import '@material/web/button/filled-button.js';
-// import '@material/web/button/outlined-button.js';
-// import '@material/web/checkbox/checkbox.js';
-// import '@material/web/switch/switch.js';
-import './App.css'
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Dashboard from "./pages/Dashboard";
+import AboutUs from "./pages/AboutUs";
+import Error404 from "./pages/Error404";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      <div className="App">
-        <StudentPortal />
-        <CourseInstructors/>
-      </div>
-      {/* <label>
-        Material 3
-        <md-checkbox checked></md-checkbox>
-      </label>
-
-      <md-outlined-button>Back</md-outlined-button>
-      <md-filled-button>Next</md-filled-button>
-      <br />
-      <md-switch icons></md-switch>
-
-      <md-switch icons show-only-selected-icon></md-switch>
-
-      <md-switch></md-switch> */}
+      <Routes>
+        <Route path='/' element={<Dashboard />} />
+        <Route path='/about' element={<AboutUs />} />
+        <Route path='*' element={<Error404 />} />
+      </Routes>
     </>
   )
 }
