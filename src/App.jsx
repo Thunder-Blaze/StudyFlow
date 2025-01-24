@@ -1,3 +1,6 @@
+import React from "react";
+import StudentPortal from "./components/StudentPortal";
+import CourseInstructors from "./components/CourseInstructors";
 // import { useState } from 'react'
 // import '@material/web/button/filled-button.js';
 // import '@material/web/button/outlined-button.js';
@@ -10,6 +13,10 @@ function App() {
 
   return (
     <>
+      <div className="App">
+        <StudentPortal />
+        <CourseInstructors/>
+      </div>
       {/* <label>
         Material 3
         <md-checkbox checked></md-checkbox>
