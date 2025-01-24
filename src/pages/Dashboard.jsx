@@ -20,9 +20,15 @@ function Dashboard() {
             <div className='flex flex-col w-full text-gray-200 bg-gray-950'>
                 <Navbar UserInfo={UserInfo} />
                 <DashboardBanner UserName={UserInfo.name} />
-                <CourseInstructors />
-                <EnrolledCourses />
-                <Announcement />
+                <div className='flex flex-col-reverse md:flex-row'>
+                    <div className='w-full'>
+                        <EnrolledCourses />
+                    </div>
+                    <div className='w-full flex flex-col-reverse md:flex-col md:max-w-80 pl-4 pb-2 md:pl-0 md:pb-0'>
+                        <CourseInstructors />
+                        <Announcement />
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -1,5 +1,4 @@
 import React from "react";
-import "./DashboardBanner.css"; 
 
 const DashboardBanner = ({UserName}) => {
   const currentDate = new Date();
@@ -14,7 +13,7 @@ const DashboardBanner = ({UserName}) => {
             <p className="text-lg md:whitespace-nowrap whitespace-normal">Always stay updated in your student portal</p>
           </div>
         </div>
-        <div className="md:flex hidden">
+        <div className="md:flex hidden shrink-0">
           <img
             src="https://files.catbox.moe/luzfny.png" 
             alt="Student"

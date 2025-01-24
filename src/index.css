@@ -3,4 +3,18 @@
 
 body {
     font-family: Urbanist, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05rem;
+    background: #242A3D;
+    color: #E5E7EB;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #242A3D;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #030712;
 }
