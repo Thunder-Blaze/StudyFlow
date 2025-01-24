@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 import SidebarLinks from './SidebarLinks'
 
 function Sidebar({UserInfo}) {
@@ -13,5 +13,14 @@ function Sidebar({UserInfo}) {
         </div>
     )
 }
+
+Sidebar.propTypes = {
+    UserInfo: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        position: PropTypes.string.isRequired,
+        profession: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+    }).isRequired,
+};
 
 export default Sidebar

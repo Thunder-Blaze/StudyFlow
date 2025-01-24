@@ -1,5 +1,3 @@
-import React from 'react'
-import { DiZend } from 'react-icons/di'
 import { Link } from 'react-router-dom'
 
 const Announcement = () => {

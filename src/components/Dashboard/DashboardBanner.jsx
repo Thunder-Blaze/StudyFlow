@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
 const DashboardBanner = ({UserName}) => {
   const currentDate = new Date();
@@ -25,6 +25,10 @@ const DashboardBanner = ({UserName}) => {
       
     </div>
   );
+};
+
+DashboardBanner.propTypes = {
+  UserName: PropTypes.string.isRequired,
 };
 
 export default DashboardBanner;

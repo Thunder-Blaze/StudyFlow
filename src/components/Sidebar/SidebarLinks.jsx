@@ -1,5 +1,4 @@
-import React from 'react'
-import { FaHome, FaInfoCircle, FaUser, FaUsers, FaQuestionCircle, FaCalendarAlt, FaStar, FaClipboardCheck } from 'react-icons/fa'
+import { FaHome, FaUser, FaUsers, FaQuestionCircle, FaCalendarAlt, FaStar, FaClipboardCheck } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const SidebarLinks = () => {

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const StudentGrades = () => {
   return (
     <div>StudentGrades</div>

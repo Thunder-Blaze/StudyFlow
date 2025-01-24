@@ -1,4 +1,3 @@
-import React from 'react'
 import DashboardBanner from "../components/Dashboard/DashboardBanner";
 import CourseInstructors from "../components/Dashboard/CourseInstructors";
 import Sidebar from '../components/Sidebar/Sidebar';

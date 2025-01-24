@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 import { FaBell, FaSearch } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
@@ -29,5 +29,14 @@ const Navbar = ({UserInfo}) => {
     </div>
   )
 }
+
+Navbar.propTypes = {
+    UserInfo: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        position: PropTypes.string.isRequired,
+        profession: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+    }).isRequired,
+};
 
 export default Navbar

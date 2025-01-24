@@ -1,8 +1,8 @@
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Route, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom'
 import './App.css';
-// const Home = lazy(() => import('./Home'));
+
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
 const Error404 = lazy(() => import("./pages/Error404"));
