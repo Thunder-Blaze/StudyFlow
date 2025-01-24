@@ -1,42 +1,24 @@
 import React from "react";
 import "./DashboardBanner.css"; 
 
-const DashboardBanner = () => {
+const DashboardBanner = ({UserName}) => {
+  const currentDate = new Date();
   return (
     
-    <div className="container">
-      <div className="upper">
-      <div className="search-bar">
-        <input type="text" placeholder="Search" />
-      </div>
-      <div className="p-header">
-        <div className="p-info">
-          <img
-            className="p-avatar"
-            src="https://i0.wp.com/rollercoasteryears.com/wp-content/uploads/Thrive-During-Finals-.jpg?fit=1000%2C667&ssl=1" 
-            alt="STUDENT"
-          />
-          <div>
-            <h2>Name</h2>
-            <p>1st year</p>
+    <div className="p-4 py-2">
+      <div className="bg-gradient-to-r from-gray-600 to-gray-800 flex justify-between p-6 py-0 rounded-xl relative h-full">
+        <div className="flex flex-col justify-between gap-16 my-4">
+          <span className="font-semibold text-lg">{`${currentDate.toLocaleDateString("en-US", { month: 'long' })} ${currentDate.getDate()}, ${currentDate.getFullYear()}`}</span>
+          <div className="flex flex-col gap-3">
+            <h1 className="text-4xl font-bold">Welcome back, {UserName}</h1>
+            <p className="text-lg md:whitespace-nowrap whitespace-normal">Always stay updated in your student portal</p>
           </div>
         </div>
-        <div className="icon">
-          <span>🔴</span> 
-        </div>
-      </div>
-      </div>
-
-      <div className="wel-section">
-        <div className="wel-header">
-          <span>DATE</span>
-          <h1>Welcome back, NAME</h1>
-          <p>Always stay updated in your student portal</p>
-        </div>
-        <div className="wel-image">
+        <div className="md:flex hidden">
           <img
-            src="https://i0.wp.com/rollercoasteryears.com/wp-content/uploads/Thrive-During-Finals-.jpg?fit=1000%2C667&ssl=1" 
+            src="https://files.catbox.moe/luzfny.png" 
             alt="Student"
+            className="h-60"
           />
         </div>
       </div>
