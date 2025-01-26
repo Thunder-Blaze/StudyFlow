@@ -1,7 +1,5 @@
 const StudentGrades = () => {
-  return (
-    <div>StudentGrades</div>
-  )
+    return <div>StudentGrades</div>
 }
 
 export default StudentGrades

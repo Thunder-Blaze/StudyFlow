@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Oblivion",
+        "subject": "WDA-II",
+        "members": [
+            {
+                "name": "Sai Sujit",
+                "image": "https://i.pinimg.com/236x/db/1f/9a/db1f9a3eaca4758faae5f83947fa807c.jpg"
+            },
+            {
+                "name": "Satyam",
+                "image": "https://i.pinimg.com/236x/db/1f/9a/db1f9a3eaca4758faae5f83947fa807c.jpg"
+            },
+            {
+                "name": "Chandraveer",
+                "image": "https://i.pinimg.com/236x/db/1f/9a/db1f9a3eaca4758faae5f83947fa807c.jpg"
+            }
+        ]
+    },
+    {
+        "name": "Strinova",
+        "subject": "Object Oriented Programming",
+        "members": [
+            {
+                "name": "Sai Sujit",
+                "image": "https://i.pinimg.com/236x/db/1f/9a/db1f9a3eaca4758faae5f83947fa807c.jpg"
+            },
+            {
+                "name": "Satyam",
+                "image": "https://i.pinimg.com/236x/db/1f/9a/db1f9a3eaca4758faae5f83947fa807c.jpg"
+            },
+            {
+                "name": "Chandraveer",
+                "image": "https://i.pinimg.com/236x/db/1f/9a/db1f9a3eaca4758faae5f83947fa807c.jpg"
+            }
+        ]
+    }
+]

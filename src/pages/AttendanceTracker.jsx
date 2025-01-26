@@ -1,7 +1,5 @@
 const AttendanceTracker = () => {
-  return (
-    <div>AttendanceTracker</div>
-  )
+    return <div>AttendanceTracker</div>
 }
 
 export default AttendanceTracker

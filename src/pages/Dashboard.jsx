@@ -1,9 +1,9 @@
-import DashboardBanner from "../components/Dashboard/DashboardBanner";
-import CourseInstructors from "../components/Dashboard/CourseInstructors";
-import Sidebar from '../components/Sidebar/Sidebar';
-import Navbar from '../components/Navbar/Navbar';
-import EnrolledCourses from '../components/Courses/EnrolledCourses';
-import Announcement from '../components/Announcement/Announcement';
+import DashboardBanner from '../components/Dashboard/DashboardBanner'
+import CourseInstructors from '../components/Dashboard/CourseInstructors'
+import Sidebar from '../components/Sidebar/Sidebar'
+import Navbar from '../components/Navbar/Navbar'
+import EnrolledCourses from '../components/Courses/EnrolledCourses'
+import Announcement from '../components/Announcement/Announcement'
 
 function Dashboard() {
     const UserInfo = {
@@ -14,16 +14,16 @@ function Dashboard() {
     }
 
     return (
-        <div className='Dashboard w-full min-h-screen flex'>
+        <div className="Dashboard w-full min-h-screen flex">
             <Sidebar UserInfo={UserInfo} />
-            <div className='flex flex-col w-full text-gray-200 bg-gray-950'>
+            <div className="flex flex-col w-full text-gray-200 bg-gray-950">
                 <Navbar UserInfo={UserInfo} />
                 <DashboardBanner UserName={UserInfo.name} />
-                <div className='flex flex-col-reverse md:flex-row'>
-                    <div className='w-full'>
+                <div className="flex flex-col-reverse md:flex-row">
+                    <div className="w-full">
                         <EnrolledCourses />
                     </div>
-                    <div className='w-full flex flex-col-reverse md:flex-col md:max-w-80 pl-4 pb-2 md:pl-0 md:pb-0'>
+                    <div className="w-full flex flex-col-reverse md:flex-col md:max-w-80 pl-4 pb-2 md:pl-0 md:pb-0">
                         <CourseInstructors />
                         <Announcement />
                     </div>

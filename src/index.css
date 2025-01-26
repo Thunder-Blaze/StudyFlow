@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 body {
     font-family: Urbanist, Arial, Helvetica, sans-serif;
     letter-spacing: 0.05rem;
-    background: #242A3D;
-    color: #E5E7EB;
+    background: #242a3d;
+    color: #e5e7eb;
 }
 
 ::-webkit-scrollbar {
     width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #242A3D;
+    background: #242a3d;
     border-radius: 4px;
 }
 ::-webkit-scrollbar-track {

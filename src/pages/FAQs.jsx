@@ -1,7 +1,5 @@
 const FAQs = () => {
-  return (
-    <div>FAQs</div>
-  )
+    return <div>FAQs</div>
 }
 
 export default FAQs

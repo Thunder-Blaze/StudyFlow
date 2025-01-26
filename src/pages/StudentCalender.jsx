@@ -1,7 +1,5 @@
 const StudentCalender = () => {
-  return (
-    <div>StudentCalender</div>
-  )
+    return <div>StudentCalender</div>
 }
 
 export default StudentCalender
