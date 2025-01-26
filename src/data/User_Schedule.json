@@ -1,0 +1,17 @@
+[
+    {
+        "subject": "Object Oriented Programming",
+        "teacher": "DBS",
+        "time": "04:00 PM"
+    },
+    {
+        "subject": "Web Development & Application",
+        "teacher": "PS",
+        "time": "05:00 PM"
+    },
+    {
+        "subject": "Computer Architecture",
+        "teacher": "AS",
+        "time": "06:00 PM"
+    }
+]
