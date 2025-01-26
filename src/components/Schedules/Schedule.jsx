@@ -18,7 +18,7 @@ const Schedule = () => {
                                     {schedule.subject}
                                 </h2>
                             </div>
-                            <div className='flex flex-row gap-1 justify-between'>
+                            <div className="flex flex-row gap-1 justify-between">
                                 <span className="text-sm">
                                     {schedule.teacher}
                                 </span>

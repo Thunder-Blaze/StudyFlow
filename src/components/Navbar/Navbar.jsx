@@ -1,13 +1,16 @@
-import PropTypes from 'prop-types';
-import { FaBell, FaSearch } from 'react-icons/fa';
-import { HiMenu } from "react-icons/hi";
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types'
+import { FaBell, FaSearch } from 'react-icons/fa'
+import { HiMenu } from 'react-icons/hi'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({ UserInfo, toggleSidebar }) => {
     return (
         <div className="p-3 px-4 flex w-full justify-between gap-4">
-            <div className='flex gap-2 items-center justify-center'>
-                <HiMenu className='w-8 h-8 flex lg:hidden cursor-pointer' onClick={toggleSidebar} />
+            <div className="flex gap-2 items-center justify-center">
+                <HiMenu
+                    className="w-8 h-8 flex lg:hidden cursor-pointer"
+                    onClick={toggleSidebar}
+                />
                 <div className="w-full max-w-[20rem] relative">
                     <FaSearch className="text-gray-500 absolute left-3 top-4" />
                     <input

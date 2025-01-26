@@ -4,10 +4,10 @@ import Navbar from '../components/Navbar/Navbar'
 import PropTypes from 'prop-types'
 
 function Page_Layout({ children }) {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
     const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
+        setIsSidebarOpen(!isSidebarOpen)
     }
 
     const UserInfo = {
@@ -19,7 +19,11 @@ function Page_Layout({ children }) {
 
     return (
         <div className="w-full min-h-screen flex">
-            <Sidebar UserInfo={UserInfo} toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
+            <Sidebar
+                UserInfo={UserInfo}
+                toggleSidebar={toggleSidebar}
+                isSidebarOpen={isSidebarOpen}
+            />
             <div className="flex flex-col w-full text-gray-200 bg-gray-950">
                 <Navbar UserInfo={UserInfo} toggleSidebar={toggleSidebar} />
                 {children}
