@@ -1,7 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom'
-import './App.css'
 
 const Dashboard = lazy(() => import('./pages/Dashboard'))
 const AboutUs = lazy(() => import('./pages/AboutUs'))
