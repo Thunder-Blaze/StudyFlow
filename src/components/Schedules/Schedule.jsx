@@ -11,17 +11,17 @@ const Schedule = () => {
                     return (
                         <div
                             key={key}
-                            className="bg-gray-800 rounded-2xl p-4 py-3 border-l-6 border-solid border-gray-500 text-slate-200 flex flex-row justify-between"
+                            className="bg-gray-800 rounded-2xl p-4 py-3 border-l-6 border-solid border-gray-500 text-slate-200 flex gap-1 flex-col justify-between"
                         >
-                            <div className="flex flex-col gap-1 justify-evenly">
-                                <h2 className="text-lg font-semibold">
+                            <div className="flex">
+                                <h2 className="text-lg font-semibold truncate">
                                     {schedule.subject}
                                 </h2>
+                            </div>
+                            <div className='flex flex-row gap-1 justify-between'>
                                 <span className="text-sm">
                                     {schedule.teacher}
                                 </span>
-                            </div>
-                            <div>
                                 <span className="text-sm">{schedule.time}</span>
                             </div>
                         </div>

@@ -5,15 +5,15 @@ const Announcements = () => {
     return (
         <Page_Layout>
             <div>
-                <h1 className="ml-6 text-3xl font-bold my-4 mb-8">
+                <h1 className="ml-6 text-3xl font-bold my-2 mb-8">
                     Announcements
                 </h1>
-                <div className="flex flex-col gap-4 mt-4 m-6">
+                <div className="flex flex-col gap-4 mt-4 m-3 lg:m-6">
                     {Announcements_Data.map((info, key) => {
                         return (
                             <div
                                 key={key}
-                                className="bg-gray-800 rounded-lg text-sm p-5 px-3 text-white flex flex-row justify-between gap-3 border-2 border-solid border-gray-500 transition-all duration-300 hover:bg-gray-950 "
+                                className="bg-gray-800 rounded-lg p-2 px-2 leading-6 text-white flex flex-row justify-between gap-3 border-2 border-solid border-gray-500 transition-all duration-300 hover:bg-gray-900 "
                             >
                                 <div className="flex items-center justify-center shrink-0">
                                     <img

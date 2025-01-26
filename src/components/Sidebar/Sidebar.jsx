@@ -1,9 +1,14 @@
 import PropTypes from 'prop-types'
 import SidebarLinks from './SidebarLinks'
+import { FaXmark } from "react-icons/fa6";
 
-function Sidebar({ UserInfo }) {
+function Sidebar({ UserInfo, toggleSidebar, isSidebarOpen }) {
     return (
-        <div className="h-screen sticky top-0 min-w-screen lg:flex hidden overflow-y-auto justify-start sm:min-w-[16rem] bg-gray-900 items-center flex-col">
+        <div className={`h-screen ${isSidebarOpen ? "translate-none" : "-translate-x-full" } lg:translate-none fixed lg:sticky top-0 min-w-screen flex overflow-y-auto justify-start sm:min-w-[16rem] bg-gray-900 transition-all duration-300 items-center flex-col z-50`}>
+            <FaXmark
+                className="w-8 h-8 lg:hidden absolute top-5 left-3 cursor-pointer"
+                onClick={toggleSidebar} 
+            />
             <div className="flex flex-col">
                 <img
                     src={UserInfo.image}
@@ -29,6 +34,8 @@ Sidebar.propTypes = {
         profession: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,
     }).isRequired,
+    toggleSidebar: PropTypes.func.isRequired,
+    isSidebarOpen: PropTypes.bool.isRequired,
 }
 
 export default Sidebar

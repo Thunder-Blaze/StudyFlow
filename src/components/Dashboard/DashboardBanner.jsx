@@ -4,7 +4,7 @@ const DashboardBanner = ({ UserName }) => {
     const currentDate = new Date()
     return (
         <div className="p-4 py-2">
-            <div className="bg-gradient-to-r from-gray-600 to-gray-800 flex justify-between p-6 py-0 rounded-xl relative h-full">
+            <div className="bg-gradient-to-r from-gray-600 to-gray-800 flex justify-between p-6 py-0 rounded-xl relative h-full overflow-hidden">
                 <div className="flex flex-col justify-between gap-16 my-4">
                     <span className="font-semibold text-lg">{`${currentDate.toLocaleDateString('en-US', { month: 'long' })} ${currentDate.getDate()}, ${currentDate.getFullYear()}`}</span>
                     <div className="flex flex-col gap-3">
