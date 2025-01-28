@@ -1,0 +1,32 @@
+[
+    {
+        "name": "WDA",
+        "present": 91,
+        "absent": 9
+    },
+    {
+        "name": "OOPS",
+        "present": 82,
+        "absent": 18
+    },
+    {
+        "name": "COA",
+        "present": 99,
+        "absent": 1
+    },
+    {
+        "name": "DS",
+        "present": 61,
+        "absent": 39
+    },
+    {
+        "name": "PC",
+        "present": 1,
+        "absent": 99
+    },
+    {
+        "name": "Sports",
+        "present": 50,
+        "absent": 50
+    }
+]
