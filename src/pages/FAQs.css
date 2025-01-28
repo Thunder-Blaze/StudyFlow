@@ -1,0 +1,10 @@
+.Heading{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.Heading{
+    font-size: xx-large;
+    font-weight: bold;
+}
