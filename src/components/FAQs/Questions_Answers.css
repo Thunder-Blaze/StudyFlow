@@ -1,9 +1,8 @@
-
-.question{
+.question {
     margin-top: 10px;
     /* height: 90px; */
     display: flex;
-    align-items: center ;
+    align-items: center;
     background-color: #e3dede;
     margin-left: 1%;
     border-left: 5px solid oklch(0.551 0.027 264.364);
@@ -11,22 +10,22 @@
     border-top-right-radius: 15px;
 }
 
-.question h1{
-    margin: -1rem 0.5rem; 
+.question h1 {
+    margin: -1rem 0.5rem;
     font-size: 5rem;
     color: oklch(0.373 0.034 259.733);
 }
 
-.question h2{
+.question h2 {
     margin-left: 5%;
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
 }
 
-.answer{
+.answer {
     /* height: 90px; */
     display: flex;
-    align-items: center ;
+    align-items: center;
     background-color: #ffffff;
     margin-left: 1%;
     border-left: 5px solid #e3dede;
@@ -34,29 +33,29 @@
     border-bottom-right-radius: 15px;
 }
 
-.answer h1{
-    margin: -1rem 0.5rem; 
+.answer h1 {
+    margin: -1rem 0.5rem;
     font-size: 5rem;
     color: #e3dede;
 }
 
-.answer h2{
+.answer h2 {
     margin-left: 5%;
     font-size: 1.5rem;
     color: oklch(0.551 0.027 264.364);
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
-    .question h1{
+    .question h1 {
         font-size: 2rem;
     }
-    .question h2{
+    .question h2 {
         font-size: 1rem;
     }
-    .answer h1{
+    .answer h1 {
         font-size: 2rem;
     }
-    .answer h2{
+    .answer h2 {
         font-size: 1rem;
     }
 }
